@@ -2,6 +2,8 @@
 
 ## About this repository
 
+https://github.com/W298/zeroCity/assets/25034289/1a67dded-e67c-4e03-a1ad-6c095a0e4168
+
 **Procedural City-Generation** Project.
 
 This project is a sub-project of the [FindingYonghee](https://youtu.be/IbnIGOHuBFU?si=1Ml9hwgt_yT7VyK0) project.
