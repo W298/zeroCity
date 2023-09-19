@@ -1,7 +1,5 @@
 # zeroCity
 
-## About this repository
-
 https://github.com/W298/zeroCity/assets/25034289/1a67dded-e67c-4e03-a1ad-6c095a0e4168
 
 **Procedural City-Generation** Project.
@@ -11,7 +9,7 @@ This project is a sub-project of the [FindingYonghee](https://youtu.be/IbnIGOHuB
 - `FindingYonghee` project has further implemented a Crowd Simulation based on Reinforcement Learning.
 - This project only handles City-Generation.
 
-**About the code**
+## About the code
 - Every City-Generating Code is at [CityGenerator.cs](https://github.com/W298/zeroCity/blob/master/Assets/CityGeneration/Scripts/CityGenerator.cs) file.  
 - You can download executable file from [Release](https://github.com/W298/zeroCity/releases).
 
@@ -31,7 +29,7 @@ _[Warning] Because this project was developed with paid assets (3D models, toolk
 > Reference Paper  
 > [Citygen: An Interactive System for Procedural City Generation](https://www.citygen.net/files/citygen_gdtw07.pdf)
 
-## Generation Step
+## Generation Step Description
 
 **1. Generate Initial Point & Voronoi Diagram**
 
