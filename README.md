@@ -13,7 +13,7 @@ This project is a sub-project of the [FindingYonghee](https://youtu.be/IbnIGOHuB
 - Every City-Generating Code is at [CityGenerator.cs](https://github.com/W298/zeroCity/blob/master/Assets/CityGeneration/Scripts/CityGenerator.cs) file.  
 - You can download executable file from [Release](https://github.com/W298/zeroCity/releases).
 
-_[Warning] Because this project was developed with paid assets (3D models, toolkits), we intentionally did not upload them to this repository, so even if you download those assets and run the project, it may not work properly. If you want to test this project, please use released executable file._
+_[Warning] Because this project was developed with paid assets (3D models, toolkits), we intentionally did not upload them to this repository, so even if you download those assets and run the project, it may not work properly. If you want to test this project, please use [released executable file](https://github.com/W298/zeroCity/releases)._
 
 **Dependencies**
 
@@ -35,7 +35,7 @@ _[Warning] Because this project was developed with paid assets (3D models, toolk
 
 - Generate initial points with an appropriate distribution using `Poisson disk sampling` and use them to create a Voronoi diagram.
 
-- Afther that, use `Lloyd's Algorithm` to relax Voronoi diagram with specified iteration count.
+- Afther that, use `Lloyd's Algorithm` to relax Voronoi Diagram with specified iteration count.
 
 **2. Set Boundary of Voronoi as Primary Road**
 
@@ -55,6 +55,8 @@ _[Warning] Because this project was developed with paid assets (3D models, toolk
 **4. Generate Secondary Road & Graph**
 
 - Recursively create a `Secondary Road` from the Boundary of the `City Cell` created above.
+
+<img width="400" alt="shapes" src="https://github.com/W298/zeroCity/assets/25034289/100e966e-0f7b-48f7-8296-1bf180da2eee">
 
 - Each Loop creates a straight road, with the number and direction of roads to be created from the current vertex determined based on a specified `Probability`.
   - Typically, the directions are `Left`, `Forward`, and `Right`, and a `Random Angle Offset` is added to these to create various shapes of roads.
