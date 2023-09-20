@@ -1,6 +1,6 @@
 # zeroCity
 
-https://github.com/W298/zeroCity/assets/25034289/1a67dded-e67c-4e03-a1ad-6c095a0e4168
+https://github.com/W298/zeroCity/assets/25034289/103bf520-ef6c-4538-b821-18c3b16fcd1e
 
 **Procedural City-Generation** Project.
 
