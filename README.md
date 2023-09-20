@@ -56,12 +56,12 @@ _[Warning] Because this project was developed with paid assets (3D models, toolk
 
 - Recursively create a `Secondary Road` from the Boundary of the `City Cell` created above.
 
-<img width="350" alt="shapes" src="https://github.com/W298/zeroCity/assets/25034289/100e966e-0f7b-48f7-8296-1bf180da2eee">
+<img width="350" alt="shapes" src="https://github.com/W298/zeroCity/assets/25034289/934fb7a2-0b2d-4f08-a381-3736381658e8">
 
 - Each Loop creates a straight road, with the number and direction of roads to be created from the current vertex determined based on a specified `Probability`.
-  - Typically, the directions are `Left`, `Forward`, and `Right`, and a `Random Angle Offset` is added to these to create various shapes of roads.
+  - The directions are `Left`, `Forward`, and `Right`, and a `Random Angle Offset` is added to these to create various shapes of roads.
 
-<img width="500" alt="shapes2" src="https://github.com/W298/zeroCity/assets/25034289/3ea24a55-8385-42e3-a030-42b60095e7db">
+<img width="650" alt="shapes2" src="https://github.com/W298/zeroCity/assets/25034289/8d0de935-fd91-47f2-8f35-09f58483c307">
 
 - Once we know which direction and what size roads will be generated, we need to validate that they are valid. Below, the new vertex is the end point of the road that will be created.
   - Check 01. Is the new vertex inside the site?
@@ -72,6 +72,8 @@ _[Warning] Because this project was developed with paid assets (3D models, toolk
     - Otherwise, merge the two vertices.
   - Check 03. Is the new vertex close enough to another edge?
     - If yes, divide the new vertex by the point where it intersects the nearest edge.
+  - Check 04. Is the new road intersect with another road?
+    - If yes, divide divide the intersecting roads. (new one and old one)
   - If none of the above conditions apply, create the road as is.
  
 - Repeat this procedure until reached at specified `Dimension(Stack)`.
