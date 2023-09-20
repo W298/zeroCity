@@ -56,10 +56,12 @@ _[Warning] Because this project was developed with paid assets (3D models, toolk
 
 - Recursively create a `Secondary Road` from the Boundary of the `City Cell` created above.
 
-<img width="400" alt="shapes" src="https://github.com/W298/zeroCity/assets/25034289/100e966e-0f7b-48f7-8296-1bf180da2eee">
+<img width="350" alt="shapes" src="https://github.com/W298/zeroCity/assets/25034289/100e966e-0f7b-48f7-8296-1bf180da2eee">
 
 - Each Loop creates a straight road, with the number and direction of roads to be created from the current vertex determined based on a specified `Probability`.
   - Typically, the directions are `Left`, `Forward`, and `Right`, and a `Random Angle Offset` is added to these to create various shapes of roads.
+
+<img width="500" alt="shapes2" src="https://github.com/W298/zeroCity/assets/25034289/3ea24a55-8385-42e3-a030-42b60095e7db">
 
 - Once we know which direction and what size roads will be generated, we need to validate that they are valid. Below, the new vertex is the end point of the road that will be created.
   - Check 01. Is the new vertex inside the site?
